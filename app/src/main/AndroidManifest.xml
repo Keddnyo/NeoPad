@@ -9,7 +9,7 @@
         android:theme="@style/Theme.NeoPad"
         tools:targetApi="33">
         <activity
-            android:name=".MainActivity"
+            android:name=".presentation.MainActivity"
             android:exported="true"
             android:theme="@style/Theme.NeoPad">
             <intent-filter>

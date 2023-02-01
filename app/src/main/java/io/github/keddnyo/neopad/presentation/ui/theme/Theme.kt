@@ -1,4 +1,4 @@
-package io.github.keddnyo.neopad.ui.theme
+package io.github.keddnyo.neopad.presentation.ui.theme
 
 import android.app.Activity
 import android.os.Build
