@@ -69,7 +69,7 @@ fun NoteDetail(navController: NavHostController, viewModel: MainViewModel) {
                             ) {
                                 if (title.isEmpty()) {
                                     Text(
-                                        text = "Title",
+                                        text = stringResource(R.string.note_content),
                                         style = MaterialTheme.typography.headlineMedium.copy(
                                             color = MaterialTheme.colorScheme.onBackground.copy(
                                                 alpha = 0.3f
@@ -126,7 +126,6 @@ fun NoteDetail(navController: NavHostController, viewModel: MainViewModel) {
                     }
                 }
             }) { padding ->
-                TextField(value = "", onValueChange = {})
                 BasicTextField(value = content,
                     onValueChange = {
                         content = it
@@ -146,7 +145,7 @@ fun NoteDetail(navController: NavHostController, viewModel: MainViewModel) {
                         Box {
                             if (content.isEmpty()) {
                                 Text(
-                                    text = "Note", style = MaterialTheme.typography.bodyLarge.copy(
+                                    text = stringResource(R.string.note_content), style = MaterialTheme.typography.bodyLarge.copy(
                                         color = MaterialTheme.colorScheme.onBackground.copy(
                                             alpha = 0.3f
                                         )

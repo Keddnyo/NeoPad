@@ -8,4 +8,7 @@
     <string name="delete_note">Delete</string>
     <string name="note_deleted">Note deleted</string>
     <string name="pop_up">Pop Up</string>
+
+    <string name="note_title">Title</string>
+    <string name="note_content">Note content</string>
 </resources>

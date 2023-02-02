@@ -6,4 +6,7 @@
     <string name="delete_note">Удалить</string>
     <string name="note_deleted">Заметка удалена</string>
     <string name="pop_up">Назад</string>
+
+    <string name="note_title">Заголовок</string>
+    <string name="note_content">Содержимое заметки</string>
 </resources>
