@@ -1,11 +1,12 @@
 <resources>
     <string name="app_name" translatable="false">NeoPad</string>
+    <string name="github" translatable="false">GitHub</string>
 
-    <string name="create_note_suggest">Create your first note. Click on \'+\' button.</string>
+    <string name="create_note_suggest">There are no any notes here</string>
 
-    <string name="create_note">New</string>
-    <string name="save_note">Save</string>
-    <string name="delete_note">Delete</string>
+    <string name="create_note">Create note</string>
+    <string name="save_note">Save note</string>
+    <string name="delete_note">Delete note</string>
     <string name="note_deleted">Note deleted</string>
     <string name="pop_up">Pop Up</string>
 
