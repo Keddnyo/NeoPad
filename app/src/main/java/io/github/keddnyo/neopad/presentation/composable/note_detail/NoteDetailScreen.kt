@@ -69,7 +69,7 @@ fun NoteDetail(navController: NavHostController, viewModel: MainViewModel) {
                             ) {
                                 if (title.isEmpty()) {
                                     Text(
-                                        text = stringResource(R.string.note_content),
+                                        text = stringResource(R.string.note_title),
                                         style = MaterialTheme.typography.headlineMedium.copy(
                                             color = MaterialTheme.colorScheme.onBackground.copy(
                                                 alpha = 0.3f
