@@ -9,6 +9,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import io.github.keddnyo.neopad.domain.viewmodel.MainViewModel
 import io.github.keddnyo.neopad.domain.viewmodel.MainViewModelFactory
+import io.github.keddnyo.neopad.presentation.composable.main_screen.NoteListScreen
 import io.github.keddnyo.neopad.presentation.composable.note_detail.NoteDetail
 
 @Composable
@@ -22,10 +23,10 @@ fun NoteNavHost() {
 
     NavHost(
         navController = navController,
-        startDestination = NoteNavRoute.NoteDetail.route
+        startDestination = NoteNavRoute.MainScreen.route
     ) {
         composable(NoteNavRoute.MainScreen.route) {
-
+            NoteListScreen(navController, viewModel)
         }
         composable(NoteNavRoute.NoteDetail.route) {
             NoteDetail(navController, viewModel)

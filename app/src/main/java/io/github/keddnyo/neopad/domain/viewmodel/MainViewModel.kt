@@ -53,4 +53,6 @@ class MainViewModel(application: Application): AndroidViewModel(application = ap
 
     var currentNote = mutableStateOf(Note())
 
+    var isNoteExists = mutableStateOf(false)
+
 }

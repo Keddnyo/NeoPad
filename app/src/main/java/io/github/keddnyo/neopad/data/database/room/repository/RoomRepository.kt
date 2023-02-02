@@ -11,13 +11,16 @@ class RoomRepository(private val dao: NoteRoomDao) : DatabaseRepository {
 
     override suspend fun createNote(note: Note, onSuccess: () -> Unit) {
         dao.createNote(note = note)
+        onSuccess()
     }
 
     override suspend fun updateNote(note: Note, onSuccess: () -> Unit) {
         dao.updateNote(note = note)
+        onSuccess()
     }
 
     override suspend fun deleteNote(note: Note, onSuccess: () -> Unit) {
         dao.deleteNote(note = note)
+        onSuccess()
     }
 }

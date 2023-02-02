@@ -1,0 +1,9 @@
+<resources>
+    <string name="create_note_suggest">Нажмите на кнопку \'+\' чтобы создать заметку.</string>
+
+    <string name="create_note">Создать</string>
+    <string name="save_note">Сохранить</string>
+    <string name="delete_note">Удалить</string>
+    <string name="note_deleted">Заметка удалена</string>
+    <string name="pop_up">Назад</string>
+</resources>
