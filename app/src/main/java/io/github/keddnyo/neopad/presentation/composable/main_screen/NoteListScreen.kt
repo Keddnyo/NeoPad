@@ -7,7 +7,7 @@ import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.foundation.lazy.grid.items
 import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.twotone.Add
+import androidx.compose.material.icons.twotone.Create
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.livedata.observeAsState
@@ -57,7 +57,7 @@ fun NoteListScreen(navController: NavHostController, viewModel: MainViewModel) {
                     navController.navigate(NoteNavRoute.NoteDetail.route)
                 }) {
                     Icon(
-                        imageVector = Icons.TwoTone.Add,
+                        imageVector = Icons.TwoTone.Create,
                         contentDescription = stringResource(id = R.string.create_note)
                     )
                 }
@@ -90,6 +90,7 @@ fun NoteListScreen(navController: NavHostController, viewModel: MainViewModel) {
                     } else {
                         Text(
                             text = stringResource(R.string.create_note_suggest),
+                            modifier = Modifier.padding(16.dp),
                             fontSize = 20.sp,
                             textAlign = TextAlign.Center
                         )
