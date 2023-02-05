@@ -85,7 +85,7 @@ fun NoteListScreen(navController: NavHostController, viewModel: MainViewModel) {
                 ) {
                     if (notes.isNotEmpty()) {
                         LazyVerticalGrid(
-                            modifier = Modifier.fillMaxSize(), columns = GridCells.Adaptive(192.dp)
+                            modifier = Modifier.fillMaxSize(), columns = GridCells.Adaptive(160.dp)
                         ) {
                             items(notes) { note ->
                                 NoteItem(note = note) {
